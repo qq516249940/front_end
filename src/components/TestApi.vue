@@ -41,7 +41,7 @@ export default {
   methods: {
     onSubmitGet() {
       console.log("submit! get");
-      axios.get("api/users/")
+      axios.get("http://127.0.0.1:8000/users.json")
       .then((res) => {
           this.results = JSON.stringify(res.data);
           console.log(res.data); //在console中看到数据
@@ -52,7 +52,7 @@ export default {
     },
     onSubmitPost() {
       console.log("submit! post");
-      axios.post("api/users/", this.formInline)
+      axios.post("http://127.0.0.1:8000/users.json", this.formInline)
       .then((res) => {
          console.log(res.data); //在console中看到数据
         })
