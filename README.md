@@ -28,6 +28,11 @@ npm run dev
 npm run build
 ```
 ```txt
+mock
 pass:
 UC^#01pM2OBb
+
+# django后台帐号密码
+admin:admin
 ```
+本demo配合rear_end python3 django4.1后端
