@@ -40,6 +40,10 @@ export default {
   },
   methods: {
     onSubmitGet() {
+      console.log(import.meta.env.VITE_SOME_KEY); // 123
+      console.log(import.meta.env.DB_PASSWORD); // undefined
+      console.log(import.meta.env.BASE_URL); // 查看BASE_URL 默认是/
+      console.log(import.meta.env); 
       console.log("submit! get");
       axios.get("users.json")
       .then((res) => {

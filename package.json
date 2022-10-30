@@ -2,7 +2,7 @@
   "name": "front_end",
   "version": "0.0.1",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --mode development",
     "build": "vite build",
     "preview": "vite preview"
   },
